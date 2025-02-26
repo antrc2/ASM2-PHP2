@@ -1,0 +1,11 @@
+<?php $_shouldextend[1]=1; ?>
+<?php $this->startSection('main'); ?>
+ <section class="product-list">
+ <h2>Liên hệ</h2>
+ <p>Email: antrc2gamer@gmail.com</p>
+ <p>Phone: +84 838 411 897</p>
+ </section>
+
+
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('user.layout'); } ?>

@@ -1,0 +1,14 @@
+<?php $_shouldextend[1]=1; ?>
+<?php $this->startSection('main'); ?>
+ <h1>Thêm danh mục</h1>
+ <form action="" method="POST">
+ <div>
+ <label for="">Tên danh mục</label>
+ <input type="text" name="category_name">
+ </div>
+ <div>
+ <button name="btn_addCategory">Thêm</button>
+ </div>
+ </form>
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('admin.layout'); } ?>
